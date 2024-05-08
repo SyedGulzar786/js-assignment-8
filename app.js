@@ -71,3 +71,13 @@
 //     return a * b
 // }
 // console.log(foo(1, 2))
+
+
+// function dating(){
+// var dates1 = new Date().getTime()
+// var dates2 = new Date("1 june 2024").getTime()
+// var store = dates2 - dates1
+// store = Math.floor(store/(1000*60*60*24))
+// return store
+// }
+// document.getElementById("div").innerHTML = `<h1>${dating()}</h1>`
