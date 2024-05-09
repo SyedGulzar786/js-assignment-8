@@ -81,3 +81,20 @@
 // return store
 // }
 // document.getElementById("div").innerHTML = `<h1>${dating()}</h1>`
+
+function time(){
+    var current = new Date("16 june 2024"); 
+    var now = new Date();
+    var diff =( current - now)/ 1000;
+
+    var days = Math.floor(diff / 3600 / 24)
+    var hours = Math.floor((diff / 3600) % 24);
+    var min = Math.floor((diff / 60) % 60);
+    var sec = Math.floor( diff % 60) ;
+    
+    document.getElementById("set_day").innerHTML = `<h1>${days} </h1>`;
+    document.getElementById("set_hr").innerHTML = `<h1>${hours} </h1>`;
+    document.getElementById("set_min").innerHTML = `<h1>${min} </h1>`;
+    document.getElementById("set_sec").innerHTML = `<h1>${sec} </h1>`;
+}
+time();
